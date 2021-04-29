@@ -1,0 +1,33 @@
+body {
+  font-family: sans-serif;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+}
+.hbot {
+  margin: 0 auto;
+  background-color: rgba(245, 244, 244, 0.527);
+  height: auto;
+
+  font-size: 20px;
+  text-align: left;
+  bottom: 0px;
+  font-size: 15px;
+}
+.boot {
+  display: flex;
+}
+h1 {
+  text-align: left;
+  font-size: 50px;
+}
+h2 {
+  text-align: center;
+}
+.pagina {
+}
+.occupazioni {
+  padding: 15px;
+  max-width: 20% auto;
+  margin-left: 5%;
+}
