@@ -29,3 +29,27 @@ h2 {
   max-width: 20% auto;
   margin-left: 5%;
 }
+.primo {
+  display: flex;
+  background: url("progetto.jpg") center center;
+  border: 2px red solid;
+  width: 80%;
+  margin-right: 10%;
+  margin-left: 10%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.secondo {
+  display: flex;
+  background: url("allestimento.jpeg") center center;
+  border: 2px red solid;
+  width: 80%;
+  margin-right: 10%;
+  margin-left: 10%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.testo1 {
+  border: solid 2px red;
+  margin-left: 25%;
+}
