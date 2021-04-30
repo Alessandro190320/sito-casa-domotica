@@ -31,7 +31,7 @@ h2 {
 }
 .primo {
   display: flex;
-  background: url("progetto.jpg") center center;
+  background: url("immagini/progetto.jpg") center center;
   border: 2px red solid;
   width: 80%;
   margin-right: 10%;
@@ -41,7 +41,7 @@ h2 {
 }
 .secondo {
   display: flex;
-  background: url("allestimento.jpeg") center center;
+  background: url("immagini/allestimento.jpeg") center center;
   border: 2px red solid;
   width: 80%;
   margin-right: 10%;
