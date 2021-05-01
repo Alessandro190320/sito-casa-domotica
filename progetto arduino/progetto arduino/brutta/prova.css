@@ -4,6 +4,8 @@ body {
   margin-right: 0px;
   margin-top: 0px;
 }
+
+/*descrizione fine pagina*/
 .hbot {
   margin: 0 auto;
   background-color: rgba(245, 244, 244, 0.527);
@@ -14,21 +16,27 @@ body {
   bottom: 0px;
   font-size: 15px;
 }
+
+/**/
 .boot {
   display: flex;
 }
+
 h1 {
   text-align: left;
   font-size: 50px;
 }
+
 h2 {
   text-align: center;
 }
+
 .occupazioni {
   padding: 15px;
   max-width: 20% auto;
   margin-left: 5%;
 }
+
 .primo {
   display: flex;
   background: url("../immagini/progetto.jpg") center center;
@@ -39,16 +47,18 @@ h2 {
   margin-top: 100px;
   margin-bottom: 100px;
 }
+
 .secondo {
   display: flex;
   background: url("../immagini/allestimento.jpeg") center center;
-  border: 2px red solid;
+  border: 3px gray solid;
   width: 80%;
   margin-right: 10%;
   margin-left: 10%;
   margin-top: 100px;
   margin-bottom: 100px;
 }
+
 .testo1 {
   border: solid 2px red;
   margin-left: 25%;
