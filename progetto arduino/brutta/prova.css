@@ -63,3 +63,9 @@ h2 {
   border: solid 2px red;
   margin-left: 25%;
 }
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
