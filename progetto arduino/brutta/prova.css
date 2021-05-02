@@ -4,7 +4,9 @@ body {
   margin-right: 0px;
   margin-top: 0px;
 }
-
+#caricamento {
+  margin-top: 350px;
+}
 /*descrizione fine pagina*/
 .hbot {
   margin: 0 auto;
@@ -41,9 +43,9 @@ h2 {
   display: flex;
   background: url("../immagini/progetto.jpg") center center;
   border: 2px red solid;
-  width: 80%;
+  /*width: 80%;
   margin-right: 10%;
-  margin-left: 10%;
+  margin-left: 10%;*/
   margin-top: 100px;
   margin-bottom: 100px;
 }
@@ -51,10 +53,10 @@ h2 {
 .secondo {
   display: flex;
   background: url("../immagini/allestimento.jpeg") center center;
-  border: 3px gray solid;
-  width: 80%;
-  margin-right: 10%;
-  margin-left: 10%;
+  border: 3px red solid;
+  /* width: 80%;
+  margin-right: 10%;     bordi banner 
+  margin-left: 10%;*/
   margin-top: 100px;
   margin-bottom: 100px;
 }

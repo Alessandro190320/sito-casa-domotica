@@ -1,5 +1,5 @@
 // 1-->pagina di caricamento ****PS modificare le classi corpo e caricamento in ID 
-document.getElementById("corpo").style.display = "none"; // imposto tramite il javascript lo stile display none che toglie il contenuto 
+document.getElementById("corpo").style.display = "none"; // imposto trammite il javascript lo stile display none che toglie il contenuto 
 // ps potevo mettere lo stile visibility:hidden la differenza sta che nel hidden lo nascondo ma occupa comunque lo spazio 
 // invece il dispaly none toglie proprio lo spazio praticamente lo elimina momentaneamente ***PS si può usare solo su ID e non CLASS
 setTimeout(() => {  document.getElementById("corpo").style.display = "block"; }, 2000); // il setTimeout serve per far accadere qualcosa
