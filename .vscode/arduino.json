@@ -1,0 +1,4 @@
+{
+    "board": "arduino:avr:uno",
+    "sketch": "progetto arduino\\codice arduino\\antifurto\\antifurto.ino"
+}
