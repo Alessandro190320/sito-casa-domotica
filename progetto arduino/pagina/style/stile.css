@@ -1,0 +1,77 @@
+body {
+  font-family: sans-serif;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+}
+#caricamento {
+  display: block;
+}
+img.center {
+  place-items: center;
+  margin-top: 35%;
+}
+.hbot {
+  margin: 0 auto;
+  background-color: rgba(245, 244, 244, 0.527);
+  height: auto;
+
+  font-size: 20px;
+  text-align: left;
+  bottom: 0px;
+  font-size: 15px;
+}
+.boot {
+  display: flex;
+}
+h1 {
+  text-align: left;
+  font-size: 50px;
+}
+h2 {
+  text-align: center;
+}
+.occupazioni {
+  padding: 15px;
+  max-width: 20% auto;
+  margin-left: 5%;
+}
+.primo {
+  display: flex;
+  background: url("../immagini/progetto.jpg") center center;
+  border: 2px red solid;
+  width: 80%;
+  margin-right: 10%;
+  margin-left: 10%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.secondo {
+  display: flex;
+  background: url("../immagini/allestimento.jpeg") center center;
+  border: 2px red solid;
+  width: 80%;
+  margin-right: 10%;
+  margin-left: 10%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.terzo {
+  display: flex;
+  background: url("../immagini/elettronica2.jpg") center center;
+  border: 2px red solid;
+  width: 80%;
+  margin-right: 10%;
+  margin-left: 10%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.testo {
+  border: solid 2px red;
+  margin-left: 25%;
+}
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
