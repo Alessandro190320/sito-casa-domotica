@@ -59,7 +59,7 @@ h2 {
   background: url("../immagini/allestimento.jpeg") center center;
   border: 3px red solid;
   width: 80%;
-  margin-right: 10%;     /*bordi banner*/
+  margin-right: 10%; /*bordi banner*/
   margin-left: 10%;
   margin-top: 100px;
   margin-bottom: 100px;
@@ -83,4 +83,7 @@ h2 {
 .cornice {
   height: 600px;
   padding: 50px;
+}
+.accordion {
+  padding: 10px;
 }
