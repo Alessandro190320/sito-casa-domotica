@@ -47,9 +47,9 @@ h2 {
   display: flex;
   background: url("../immagini/progetto.jpg");
   border: 2px red solid;
-  /*width: 80%;
+  width: 80%;
   margin-right: 10%;
-  margin-left: 10%;*/
+  margin-left: 10%;
   margin-top: 100px;
   margin-bottom: 100px;
 }
@@ -58,9 +58,9 @@ h2 {
   display: flex;
   background: url("../immagini/allestimento.jpeg") center center;
   border: 3px red solid;
-  /* width: 80%;
-  margin-right: 10%;     bordi banner 
-  margin-left: 10%;*/
+  width: 80%;
+  margin-right: 10%;     /*bordi banner*/
+  margin-left: 10%;
   margin-top: 100px;
   margin-bottom: 100px;
 }
