@@ -22,35 +22,35 @@
 
     <!--nav bar bootstrap -->
     <div id="corpo">
-    <nav class="navbar navbar-expand-lg navbar-light bg-light ">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-          <img src="../immagini/navbar_icon.png" alt="logo Casa " width="30" height="30">
-        </a>
-        <a class="navbar-brand" href="../pages/index.html">Casa Domotica</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <!--link bootstrap istruzioni: https://getbootstrap.com/docs/5.0/components/navs-tabs/-->
-        <!--per cambiare la posizione: justify-content-center/justify-content-end-->
-        <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-          <ul class="nav nav-pills">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="../pages/index.html">HOME</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link " href="../pages/subpages/progettazione.html">Casa</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link " href="../pages/subpages/allestimento.html">Giardino</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link " href="../pages/subpages/allestimento.html">Programmazione</a>
-            </li>
-          </ul>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="../immagini/navbar_icon.png" alt="logo Casa " width="30" height="30">
+          </a>
+          <a class="navbar-brand" href="../pages/index.html">Casa Domotica</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <!--link bootstrap istruzioni: https://getbootstrap.com/docs/5.0/components/navs-tabs/-->
+          <!--per cambiare la posizione: justify-content-center/justify-content-end-->
+          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="nav nav-pills">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../pages/index.html">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="../pages/subpages/progettazione.html">Casa</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="../pages/subpages/allestimento.html">Giardino</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="../pages/subpages/allestimento.html">Programmazione</a>
+              </li>
+            </ul>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
     <!-- fine nav bar bootstrap -->
     <br /><br />
     <!--inizio primo banner-->
@@ -61,7 +61,7 @@
             <div class="shadow p-3 mb-5 bg-body rounded">
               <div class="container-sm" height="80%">
                 <p class="fs-1">
-                  Progetto:casa domotican
+                  Progetto: casa domotica
                 </p>
                 <p class="fs-5">
                 Progetto iniziato il 03 Maggio 2021, condotta da una parte della 3I;<br /> 
@@ -98,7 +98,6 @@
                 
               </div>
             
-      
               <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                 <span class="visually-hidden">Previous</span>
@@ -120,18 +119,34 @@
               </h2>
               <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-
-                  <div class="card">
-                    <img src="../immagini/House 2021-05-15_153.jpeg" height="50%" class="card-img-top" alt="...">
-                    <div class="card-body">
-                      <h5 class="card-title">Special title treatment</h5>
-                      <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                      <a href="#" class="btn btn-primary">Go somewhere</a>
+                  <div class="shadow-sm p-3 mb-5 bg-body rounded">
+                    <div class="card" >
+                      <div class="row g-0">
+                        <div class="col-md-2">
+                          <img src="../immagini/fotocad.png" width="125%" class="rounded" class="card-img-left" alt="...">
+                        </div>
+                        <div class="col-md-1"></div>
+                        <div class="col-md-9">
+                          <div class="card-body">
+                            <h5 class="card-title">
+                              <p class="fs-2">
+                                Le nostre prime idee
+                              </p>
+                            </h5>
+                            <p class="card-text">
+                              <p class="fs-5">
+                                Come in tutti i progetti, si inizia da un idea, un'idea inizialmente considerata
+                                pazza, non realizzabile, con sensore di temperatura, sistema di irrigazione, stanze per i vari 
+                                bisogni,  e persino una collaborazione con la classe 3G per quanto riguarda 
+                                l'edilizia. Per non parlare dei aiuti dai professori e tutte le idee spuntate
+                                nelle notti interi di lavoro, in un periodo pieno di verifiche". <br />
+                              </p>
+                            </p>                            
+                          </div>
+                        </div>
+                      </div>
                     </div>
                   </div>
-                  <br />
-                  <br />
-                  
                 </div>
               </div>
             </div>
@@ -144,7 +159,34 @@
               </h2>
               <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                  <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                  <div class="shadow-sm p-3 mb-5 bg-body rounded">
+                    <div class="card" >
+                      <div class="row g-0">
+                        <div class="col-md-2">
+                          <img src="../immagini/fotocad.png" width="125%" class="rounded" class="card-img-left" alt="...">
+                        </div>
+                        <div class="col-md-1"></div>
+                        <div class="col-md-9">
+                          <div class="card-body">
+                            <h5 class="card-title">
+                              <p class="fs-2">
+                                Le nostre prime idee
+                              </p>
+                            </h5>
+                            <p class="card-text">
+                              <p class="fs-5">
+                                Come in tutti i progetti, si inizia da un idea, un'idea inizialmente considerata
+                                pazza, non realizzabile, con sensore di temperatura, sistema di irrigazione, stanze per i vari 
+                                bisogni,  e persino una collaborazione con la classe 3G per quanto riguarda 
+                                l'edilizia. Per non parlare dei aiuti dai professori e tutte le idee spuntate
+                                nelle notti interi di lavoro, in un periodo pieno di verifiche". <br />
+                              </p>
+                            </p>                            
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>                
                 </div>
               </div>
             </div>
@@ -156,8 +198,65 @@
               </h2>
               <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                 <div class="accordion-body">
-                  <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
-                </div>
+                  <div class="shadow-sm p-3 mb-5 bg-body rounded">
+                    <div class="card" >
+                      <div class="row g-0">
+                        <div class="col-md-2">
+                          <img src="../immagini/fotocad.png" width="125%" class="rounded" class="card-img-left" alt="...">
+                        </div>
+                        <div class="col-md-1"></div>
+                        <div class="col-md-9">
+                          <div class="card-body">
+                            <h5 class="card-title">
+                              <p class="fs-2">
+                                Le nostre prime idee
+                              </p>
+                            </h5>
+                            <p class="card-text">
+                              <p class="fs-5">
+                                Come in tutti i progetti, si inizia da un idea, un'idea inizialmente considerata
+                                pazza, non realizzabile, con sensore di temperatura, sistema di irrigazione, stanze per i vari 
+                                bisogni,  e persino una collaborazione con la classe 3G per quanto riguarda 
+                                l'edilizia. Per non parlare dei aiuti dai professori e tutte le idee spuntate
+                                nelle notti interi di lavoro, in un periodo pieno di verifiche". <br />
+                              </p>
+                            </p>                            
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>    
+
+                  <div class="shadow-sm p-3 mb-5 bg-body rounded">
+                    <div class="card" >
+                      <div class="row g-0">
+                        <div class="col-md-2">
+                          <img src="../immagini/fotocad.png" width="125%" class="rounded" class="card-img-left" alt="...">
+                        </div>
+                        <div class="col-md-1"></div>
+                        <div class="col-md-9">
+                          <div class="card-body">
+                            <h5 class="card-title">
+                              <p class="fs-2">
+                                Le nostre prime idee
+                              </p>
+                            </h5>
+                            <p class="card-text">
+                              <p class="fs-5">
+                                Come in tutti i progetti, si inizia da un idea, un'idea inizialmente considerata
+                                pazza, non realizzabile, con sensore di temperatura, sistema di irrigazione, stanze per i vari 
+                                bisogni,  e persino una collaborazione con la classe 3G per quanto riguarda 
+                                l'edilizia. Per non parlare dei aiuti dai professori e tutte le idee spuntate
+                                nelle notti interi di lavoro, in un periodo pieno di verifiche". <br />
+                              </p>
+                            </p>                            
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div> 
+                  
+                </div>   
               </div>
             </div>
           </div>
@@ -198,27 +297,21 @@
               </div>
           </div>
         </div>
+        <!--fine del piano rialzato-->
+
       </div>
       
       </div>
        <!-- <img src="../immagini/WhatsApp Image 2021-05-11 at 11.34.27 (3).jpeg" alt="tux" height="400px">-->
       </div>
-    </div>
 
+    </div>
     
-    <div class="secondo">
-      <pre>
-        Lorem ipsum dolor 
-        sit amet, consectetur
-        adipisicing elit. Odio 
-        ducimus eligendi repellendus
-        hic nesciunt, ex unde!
-        Sapiente maxime, unde,
-        magni modi natus ipsum 
-        iure molestias, itaque
-        quidem eaque omnis reiciendis?
-      </pre>
-    </div>    
+
+    <br />
+    <br />
+    
+
 
     <div class="hbot">
       <h2>Suddivisione dei compiti</h2>
