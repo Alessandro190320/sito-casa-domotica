@@ -87,3 +87,6 @@ h2 {
 .accordion {
   padding: 10px;
 }
+p.fs-5 {
+  height: auto;
+}
