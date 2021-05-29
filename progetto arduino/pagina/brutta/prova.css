@@ -4,13 +4,16 @@ body {
   margin-right: 0px;
   margin-top: 0px;
 }
+
 #caricamento {
   display: block;
 }
+
 img.center {
   place-items: center;
   margin-top: 35%;
 }
+
 /*descrizione fine pagina*/
 .hbot {
   margin: 0 auto;
@@ -75,6 +78,7 @@ h2 {
   margin-left: auto;
   margin-right: auto;
 }
+
 .immagini {
   height: auto;
   max-height: 500px;
@@ -84,9 +88,19 @@ h2 {
   height: 600px;
   padding: 50px;
 }
+
 .accordion {
   padding: 10px;
 }
+
 p.fs-5 {
   height: auto;
+}
+
+.bckgimg {
+  padding-top: 10%;
+  background-image: url('../immagini/background3.jpeg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
 }
