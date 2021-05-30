@@ -1,0 +1,138 @@
+body {
+  font-family: sans-serif;
+  margin-left: 0px;
+  margin-right: 0px;
+  margin-top: 0px;
+}
+
+#caricamento {
+  display: block;
+}
+
+img.center {
+  place-items: center;
+  margin-top: 35%;
+}
+
+/*descrizione fine pagina*/
+.hbot {
+  margin: 0 auto;
+  background-color: rgba(245, 244, 244, 0.527);
+  height: auto;
+
+  font-size: 20px;
+  text-align: left;
+  bottom: 0px;
+  font-size: 15px;
+}
+
+.boot {
+  display: flex;
+}
+
+h1 {
+  text-align: left;
+  font-size: 50px;
+}
+
+h2 {
+  text-align: center;
+}
+
+.occupazioni {
+  padding: 15px;
+  max-width: 20% auto;
+  margin-left: 5%;
+}
+
+.primo {
+  display: flex;
+  background: url("../style/image/progetto.jpg");
+  border: 2px red solid;
+  width: 80%;
+  margin-right: 10%;
+  margin-left: 10%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.secondo {
+  display: flex;
+  background: url("../style/image/allestimento.jpeg") center center;
+  border: 3px red solid;
+  width: 80%;
+  margin-right: 10%; /*bordi banner*/
+  margin-left: 10%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.terzo {
+  display: flex;
+  background: url("../immagini/elettronica2.jpg") center center;
+  border: 2px red solid;
+  width: 80%;
+  margin-right: 10%;
+  margin-left: 10%;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.testo1 {
+  border: solid 2px red;
+  margin-left: 15%;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.immagini {
+  height: auto;
+  max-height: 500px;
+}
+
+.cornice {
+  height: 600px;
+  padding: 50px;
+}
+
+.accordion {
+  padding: 10px;
+}
+
+p.fs-5 {
+  height: auto;
+}
+
+.bckgimg {
+  padding-top: 10%;
+  background-image: url("../style/image/background3.jpeg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+
+.contorno {
+  height: 500px;
+  width: 500px;
+  border: 2px red solid;
+  margin-left: 30%;
+}
+.bordo {
+  display: flex;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  height: 35px;
+  background-color: rgba(50, 48, 48, 255);
+}
+.tasti {
+  padding: 2px;
+  margin-left: 30%;
+}
+.testo {
+  color: white;
+  margin-left: 30%;
+}
