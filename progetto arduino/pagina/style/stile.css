@@ -118,9 +118,8 @@ p.fs-5 {
 .contorno {
   background-color: white;
   height: 630px;
-  width: 500px;
+  width: 550px;
   /*border: 2px red solid;*/
-  margin-left: 3.5%;
 }
 
 .bordo {
@@ -214,6 +213,6 @@ p.fs-5 {
   color: white;
 }
 
-.background-gray{
+.background-gray {
   background-color: rgb(246, 247, 247);
 }

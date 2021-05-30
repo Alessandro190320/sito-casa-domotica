@@ -55,7 +55,135 @@
                   <div class="col-md-6">
                     
                     <div class="container-sm">
-                      <div class="shadow-lg p-3 mb-5 bg-body rounded ">
+                      <div class="shadow-lg p-3 bg-body rounded ">
+                        <div class="overflow-auto">
+                          <div class="container">
+                            <div class="background-gray">
+                              <div class="contorno">
+                                <div class="bordo">
+                                  <div class="testo">
+                                    <pre><b>interruttori | Arduino 1.8.13</b></pre>
+                                  </div>
+                                  <div class="tasti"><img src="../immagini/interffaccia_arduino1.png" alt="tasti arduino"></div>
+                                </div>
+                                <div class="bordo2"><pre>File  Modifica  Sketch  Strumenti  Aiuto</pre></div>
+                                <div class="bordo3">
+                                  <img src="../immagini/interfaccia_arduino3.png" alt="tasti arduino" height="32px">
+                                  <div class="spazio">
+                                  <img src="../immagini/interfaccia_arduino4.png" alt="tasti arduino" height="32px">
+                                  </div>
+                                </div>
+                                <div class="bordo4">
+                                  <div class="titolo_a">interruttori §</div>
+                                  <img src="../immagini/interfaccia_arduino5.png" alt="tasti arduino" height="32px">
+                                </div>
+                                <div class="bordo5">
+                                  <pre>
+<div class="b">int</div> ledPin1 = 8;
+<div class="b">int</div> pulsantePin1 = 2;
+<div class="b">int</div> ledStato1 = <div class="b">LOW</div>;
+<div class="b">int</div> pulsanteStato1 = <div class="b">LOW</div>;
+<div class="b">int</div> lettura1=<div class="b">LOW</div>;
+                                    
+<div class="b">int</div> ledPin2 = 10;
+<div class="b">int</div> pulsantePin2 = 4;
+<div class="b">int</div> ledStato2 = <div class="b">LOW</div>;
+<div class="b">int</div> pulsanteStato2 = <div class="b">LOW</div>;
+<div class="b">int</div> lettura2 = <div class="b">LOW</div>;
+                                    
+<div class="b">int</div> ledPin3 = 12;
+<div class="b">int</div> pulsantePin3 = 6;
+<div class="b">int</div> ledStato3 = <div class="b">LOW</div>;
+<div class="b">int</div> pulsanteStato3 = <div class="b">LOW</div>;
+<div class="b">int</div> lettura3 = <div class="b">LOW</div>;
+                                    
+<div class="b">void</div> <div class="g">setup</div>(){
+  <div class="a">pinMode</div>(ledPin1, <div class="b">OUTPUT</div>);
+  <div class="a">pinMode</div>(pulsantePin1, <div class="b">INPUT</div>);
+  <div class="a">digitalWrite</div>(ledPin1, ledStato1);
+                                    
+  <div class="a">pinMode</div>(ledPin2, <div class="b">OUTPUT</div>);
+  <div class="a">pinMode</div>(pulsantePin2, <div class="b">INPUT</div>);
+  <div class="a">digitalWrite</div>(ledPin2, ledStato2);
+                                    
+  <div class="a">pinMode</div>(ledPin3, <div class="b">OUTPUT</div>);
+  <div class="a">pinMode</div>(pulsantePin3, <div class="b">INPUT</div>);
+  <div class="a">digitalWrite</div>(ledPin3, ledStato3);
+}
+                                    
+<div class="b">void</div> <div class="g">loop</div>(){
+  lettura1 = <div class="a">digitalRead</div>(pulsantePin1);
+  <div class="g">if</div>(lettura1 != pulsanteStato1 <div class="g">and</div> lettura1 == <div class="b">HIGH</div>){
+    ledStato1 = !ledStato1;
+    <div class="a">digitalWrite</div>(ledPin1, ledStato1);
+  }
+  pulsanteStato1 = lettura1;
+  <div class="a">delay</div>(10);
+                                    
+                                    
+  lettura2 = <div class="a">digitalRead</div>(pulsantePin2);
+  <div class="g">if</div>(lettura2 != pulsanteStato2 <div class="g">and</div> lettura2 == <div class="b">HIGH</div>){
+    ledStato2 = !ledStato2;
+    <div class="a">digitalWrite</div>(ledPin2, ledStato2);
+  }
+  pulsanteStato2 = lettura2;
+  <div class="a">delay</div>(10);
+                                    
+                                    
+  lettura3 = <div class="a">digitalRead</div>(pulsantePin3);
+  <div class="g">if</div>(lettura3 != pulsanteStato3 <div class="g">and</div> lettura3 == <div class="b">HIGH</div>){
+    ledStato3 = !ledStato3;
+    <div class="a">digitalWrite</div>(ledPin3, ledStato3);
+  }
+  pulsanteStato3 = lettura3;
+  <div class="a">delay</div>(10);
+}</pre>
+                                </div>
+                                <div class="bordo4"></div>
+                                <div class="bordo6"></div>
+                                <div class="bordo7"><pre> 10                            Arduino Uno su /dev/ttyACM0</pre></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-1"></div>
+
+                  <div class="col-md-5">
+                    <div class="shadow-sm p-3 mb-5 bg-body rounded">
+                      <p class="fs-3">Interruttori</p><br />
+                      <p class="fs-5"> 
+                        Dovevamo riprodurre l'impianto delle luci di una casa nel nostro progetto, ma avendo solo dei bottoni che chiudevano il cicruito solo durante la pressione, abbiamo programmato arduino in modo che legga lo stato del bottone e che apra e chiuda il circuito mantentendo lo stato proprio come un interruttore. In questo modo possiamo riprodurre gli interruttori delle luci in una casa.
+                      </p>
+                      <img src="../immagini/tinkercad_arduino1.png" alt="immagine tinkercad" width="450px">
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div><!--fine ombra conteiner-->
+      </div><!--fine conteiner--> 
+       <!--inizio del contenuto-->
+    <div class="bckgimg">
+      <div class="container-sm">
+        <div class="shadow-lg p-3 mb-5 bg-body rounded">
+
+          <div class="container-sm">
+            <div class="shadow-lg p-3 mb-5 bg-body rounded "><br />
+              <div class="container-sm">
+                <div class="row g-0">
+                  
+                  <div class="col-md-6">
+                    
+                    <div class="container-sm">
+                      <div class="shadow-lg p-3 bg-body rounded ">
                         <div class="overflow-auto">
                           <div class="container">
                             <div class="background-gray">
@@ -74,31 +202,46 @@
                                   </div>
                                 </div>
                                 <div class="bordo4">
-                                  <div class="titolo_a">interruttore §</div>
+                                  <div class="titolo_a">antifurto §</div>
                                   <img src="../immagini/interfaccia_arduino5.png" alt="tasti arduino" height="32px">
                                 </div>
                                 <div class="bordo5">
                                   <pre>
-<div class="b">int</div> ledPin = 9;
-<div class="b">int</div> pulsantePin = 2;
-<div class="b">int</div> ledStato = <div class="b">LOW</div>;
-<div class="b">int</div> pulsanteStato = <div class="b">LOW</div>;
-
-<div class="b">void</div> <div class="g">setup</div>(){
+ <div class="b">const int</div> buttonPin = 5;    
+ <div class="b">const int</div> ledPin =  13;      
+ <div class="b">int</div> pirPin = 2;              
+ <div class="b">int</div> pirStat = 0;             
+ <div class="b">int</div> cnt =0;
+ <div class="b">int</div> buttonState = 0;         
+                                    
+ <div class="b">void</div> <div class="g">setup</div>() {
+  <div class="a">pinMode</div>(ledPin, <div class="b">OUTPUT</div>);     
+  <div class="a">pinMode</div>(pirPin, <div class="b">INPUT</div>);     
   <div class="a">pinMode</div>(ledPin, <div class="b">OUTPUT</div>);
-  <div class="a">pinMode</div>(pulsantePin, <div class="b">INPUT</div>);
-  <div class="a">digitalWrite</div>(ledPin, ledStato);
-}
-
-<div class="b">void</div> <div class="g">loop</div>(){
-  <div class="b">int</div> lettura = <div class="a">digitalRead</div>(pulsantePin);
-  <div class="g">if</div>(lettura != pulsanteStato <div class="g">and</div> lettura == <div class="b">HIGH</div>){
-    ledStato = !ledStato;
-    <div class="a">digitalWrite</div>(ledPin, ledStato);
+  <div class="a">pinMode</div>(buttonPin, <div class="b">INPUT</div>);
+  <div class="a"><b>Serial</b>.begin</div>(9600);
+ }
+ <div class="b">void</div> <div class="g">loop</div>(){
+  buttonState = <div class="a">digitalRead</div>(buttonPin);
+                                    
+  <div class="g">if</div> (buttonState == <div class="b">HIGH</div>) {
+    cnt++;
+    <div class="a">delay</div>(250);
+  } 
+  <div class="g">if</div>(cnt%2==0){
+    pirStat = <div class="a">digitalRead</div>(pirPin); 
+    <div class="g">if</div> (pirStat == <div class="b">HIGH</div>) {            
+      <div class="a">digitalWrite</div>(ledPin, HIGH);     
+    } 
+    <div class="g">else</div> {
+      <div class="a">digitalWrite</div>(ledPin, <div class="b">LOW</div>);      
+    }
   }
-  pulsanteStato = lettura;
-  <div class="a">delay</div>(10);
-}</pre>
+  <div class="g">else</div>{
+    <div class="a">digitalWrite</div>(ledPin, <div class="b">LOW</div>);
+    pirStat = <div class="b">LOW</div>;
+  }
+ }</pre>
                                 </div>
                                 <div class="bordo4"></div>
                                 <div class="bordo6"></div>
@@ -131,7 +274,6 @@
 
         </div><!--fine ombra conteiner-->
       </div><!--fine conteiner--> 
-    
       <!--parte finale sito-->
       <div class="hbot">
         <h2>Suddivisione dei compiti</h2>
