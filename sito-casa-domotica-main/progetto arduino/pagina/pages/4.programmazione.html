@@ -44,7 +44,7 @@
     
     <!--inizio del contenuto-->
     <div class="bckgimg">
-      <div class="container-sm" >
+      <div class="container-sm">
         <div class="shadow-lg p-3 mb-5 bg-body rounded">
           <p>
             <div class="container">
@@ -55,7 +55,45 @@
                   </div>
                   <div class="tasti"><img src="../immagini/interffaccia_arduino1.png" alt="tasti arduino"></div>
                 </div>
+                <div class="bordo2"><pre>File  Modifica  Sketch  Strumenti  Aiuto</pre></div>
+                <div class="bordo3">
+                  <img src="../immagini/interfaccia_arduino3.png" alt="tasti arduino" height="32px">
+                  <div class="spazio">
+                  <img src="../immagini/interfaccia_arduino4.png" alt="tasti arduino" height="32px">
+                  </div>
+                </div>
+                <div class="bordo4">
+                  <div class="titolo_a">interruttore §</div>
+                  <img src="../immagini/interfaccia_arduino5.png" alt="tasti arduino" height="32px">
+                </div>
+                <div class="bordo5">
+                  <pre>
+ <div class="b">int</div> ledPin = 9;
+ <div class="b">int</div> pulsantePin = 2;
+ <div class="b">int</div> ledStato = <div class="b">LOW</div>;
+ <div class="b">int</div> pulsanteStato = <div class="b">LOW</div>;
+
+ <div class="b">void</div> <div class="g">setup</div>(){
+   <div class="a">pinMode</div>(ledPin, <div class="b">OUTPUT</div>);
+   <div class="a">pinMode</div>(pulsantePin, <div class="b">INPUT</div>);
+   <div class="a">digitalWrite</div>(ledPin, ledStato);
+ }
+
+ <div class="b">void</div> <div class="g">loop</div>(){
+   <div class="b">int</div> lettura = <div class="a">digitalRead</div>(pulsantePin);
+   <div class="g">if</div>(lettura != pulsanteStato <div class="g">and</div> lettura == <div class="b">HIGH</div>){
+     ledStato = !ledStato;
+     <div class="a">digitalWrite</div>(ledPin, ledStato);
+   }
+   pulsanteStato = lettura;
+   <div class="a">delay</div>(10);
+ }</pre>
+                </div>
+                <div class="bordo4"></div>
+                <div class="bordo6"></div>
+                <div class="bordo7"><pre> 10                            Arduino Uno su /dev/ttyACM0</pre></div>
               </div>
+             
             </div>
           </p>
         </div><!--fine ombra conteiner-->

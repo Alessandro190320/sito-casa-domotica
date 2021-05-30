@@ -116,9 +116,9 @@ p.fs-5 {
 }
 
 .contorno {
-  height: 500px;
+  height: 630px;
   width: 500px;
-  border: 2px red solid;
+  /*border: 2px red solid;*/
   margin-left: 30%;
 }
 .bordo {
@@ -130,9 +130,71 @@ p.fs-5 {
 }
 .tasti {
   padding: 2px;
-  margin-left: 30%;
+  margin-left: 12%;
 }
 .testo {
   color: white;
-  margin-left: 30%;
+  margin-top: 8px;
+  margin-left: 20%;
+}
+.bordo2 {
+  height: 35px;
+  /* border: red 2px solid;*/
+  padding-top: 8px;
+  padding-left: 5px;
+  border: solid 1px gray;
+}
+.bordo3 {
+  height: 35px;
+  /* border: solid red 2px;*/
+  background-color: rgba(0, 100, 104, 255);
+  display: flex;
+}
+.spazio {
+  margin-left: 58%;
+}
+.bordo4 {
+  background-color: rgba(23, 161, 165, 255);
+  height: 35px;
+  display: flex;
+}
+.titolo_a {
+  background-color: #fff;
+  color: rgba(23, 161, 165, 255);
+  width: auto;
+  height: 30px;
+  margin-top: 7px;
+  margin-left: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
+  padding-top: 5px;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  margin-right: 60%;
+}
+.bordo5 {
+  max-height: 360px;
+  overflow: scroll;
+}
+.b {
+  color: rgba(0, 151, 156, 255);
+  display: inline;
+}
+.g {
+  color: rgba(94, 109, 3, 255);
+  display: inline;
+}
+.a {
+  color: rgba(212, 87, 5, 255);
+  display: inline;
+}
+.bordo6 {
+  height: 70px;
+  background-color: black;
+  border: solid 1px white;
+}
+.bordo7 {
+  background-color: rgb(8, 100, 108);
+  height: 21px;
+  color: white;
 }
