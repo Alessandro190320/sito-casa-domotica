@@ -48,7 +48,7 @@ h2 {
 
 .primo {
   display: flex;
-  background: url("../immagini/progetto.jpg");
+  background: url("../style/image/progetto.jpg");
   border: 2px red solid;
   width: 80%;
   margin-right: 10%;
@@ -59,7 +59,7 @@ h2 {
 
 .secondo {
   display: flex;
-  background: url("../immagini/allestimento.jpeg") center center;
+  background: url("../style/image/allestimento.jpeg") center center;
   border: 3px red solid;
   width: 80%;
   margin-right: 10%; /*bordi banner*/
@@ -99,7 +99,7 @@ p.fs-5 {
 
 .bckgimg {
   padding-top: 10%;
-  background-image: url('../immagini/background3.jpeg');
+  background-image: url('../style/image/background3.jpeg');
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: 100% 100%;

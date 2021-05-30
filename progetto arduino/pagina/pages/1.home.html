@@ -5,57 +5,42 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="prova.css">
+    <link rel="stylesheet" href="../style/stile.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
     <title>Progetto arduino</title>
   </head>
  
-  <body>
-
-    <!--schermata di caricamento-->
-    <div id="caricamento">
-      <div class="container-fluid">
-        <div class="row justify-content-center">
-          <div class="col-md-6"><img src="../style/image/logoCasa.png" alt="logo 3^I" class="center"></div>
-        </div>
-      </div>
-    </div>
-    
-    <!--inizio della parte con ID = "corpo"-->
-    <div id="corpo">
-
-      <!--nav bar bootstrap -->
-      <div class="fixed-top">
-        <nav class="navbar navbar-expand-lg navbar-light bg-light ">
-          <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-              <img src="../style/image/navbar_icon.png" alt="logo Casa " width="30" height="30">
-            </a>
-            <a class="navbar-brand" href="../pages/index.html">Casa Domotica</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
-              <ul class="nav nav-pills">
-                <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="../pages/index.html">HOME</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link " href="../pages/subpages/progettazione.html">Casa</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link " href="../pages/subpages/allestimento.html">Giardino</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link " href="../pages/subpages/allestimento.html">Programmazione</a>
-                </li>
-              </ul>
-            </div>
+  <body>   
+    <!--nav bar bootstrap -->
+    <div class="fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="../style/image/navbar_icon.png" alt="logo Casa " width="30" height="30">
+          </a>
+          <a class="navbar-brand" href="../pages/0.index.html">Casa Domotica</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="nav nav-pills">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../pages/1.home.html">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="../pages/2.casa.html">Casa</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="../pages/3.giardino.html">Giardino</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " href="../pages/4.programmazione.html">Programmazione</a>
+              </li>
+            </ul>
           </div>
-        </nav>
-      </div>
-      
-    <!-- fine nav bar bootstrap -->
+        </div>
+      </nav>
+    </div>
     
     <div class="bckgimg">
       <!--inizio primo banner-->
@@ -317,46 +302,6 @@
             </div>
           </div><!--fine insieme di tendine descrittive-->
 
-          <!--
-            <div class="pagina">
-              <div class="primo">
-                <div class="testo1">
-                  <pre>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                    At soluta amet explicabo dicta aut labore, officiis error
-                    dolorum placeat minus autem, enim illo hic non doloremque est.
-                    Porro, nostrum laborum?
-                  </pre>
-                </div>
-                <div class="cornice">
-                <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-                  <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="5000">
-                      <img src="../immagini/WhatsApp Image 2021-05-11 at 11.34.27 (3).jpeg" class="immagini" alt="casa" >
-                    </div>
-                    <div class="carousel-item" data-bs-interval="5000">
-                      <img src="../immagini/WhatsApp Image 2021-05-11 at 11.34.27 (1).jpeg" class="immagini" alt="casa" >
-                    </div>
-                    <div class="carousel-item" data-bs-interval="5000">
-                      <img src="../immagini/WhatsApp Image 2021-05-11 at 11.34.27 (2).jpeg" class="immagini" alt="casa" >
-                    </div>
-                    <div class="carousel-item" data-bs-interval="5000">
-                      <img src="../immagini/WhatsApp Image 2021-05-11 at 11.34.27 (4).jpeg" class="immagini" alt="casa">
-                    </div>
-                  </div>
-                  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                  </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                  </button>
-                </div>
-              </div>
-            </div>
-          -->
-
           <!--andate a capo tattici-->
           <br /><br /><br /><br />
           
@@ -369,7 +314,7 @@
         <div class="boot">
 
           <div class="occupazioni">
-            <a href="../pages/subpages/progettazione.html">Progettazione</a><br>
+            <a href="#">Progettazione</a><br>
             David Zhu<br>
             Alessandro Marcheselli<br>
             Alexia Mantovani<br>
@@ -382,7 +327,7 @@
           </div>
 
           <div class="occupazioni">
-            <a href="../pages/subpages/allestimento.html">Allestimento</a><br>
+            <a href="#">Allestimento</a><br>
               David Zhu<br>
               Alessandro Marcheselli<br>
               Alexia Mantovani<br>
@@ -395,7 +340,7 @@
           </div>
           
           <div class="occupazioni">
-            <a href="../pages/subpages/struttura.html">Struttura</a><br>
+            <a href="#">Struttura</a><br>
             David Zhu<br>
             Alessandro Marcheselli<br>
             Alexia Mantovani<br>
@@ -408,7 +353,7 @@
           </div>
 
           <div class="occupazioni">
-            <a href="../pages/subpages/grafica.html">Grafica</a><br>
+            <a href="#">Grafica</a><br>
             David Zhu<br>
             Alessandro Marcheselli<br>
             Alexia Mantovani<br>
@@ -421,7 +366,7 @@
           </div>
 
           <div class="occupazioni">
-            <a href="../pages/subpages/programmazione.html">Programmazione</a><br>
+            <a href="#">Programmazione</a><br>
             David Zhu<br>
             Alessandro Marcheselli<br>
             Alexia Mantovani<br>
@@ -434,7 +379,7 @@
           </div>  
 
           <div class="occupazioni">
-            <a href="../pages/subpages/elettronica.html">Elettronica</a><br>
+            <a href="#">Elettronica</a><br>
             David Zhu<br>
             Alessandro Marcheselli<br>
             Alexia Mantovani<br>
@@ -447,12 +392,9 @@
           </div>
         </div>
       </div>
-    </div>
-
-  </div><!--fine background image-->
+    </div><!--fine background image-->
 
     <!--ZONA SCRIPT-->
-    <script src="prova.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
     
   </body>
