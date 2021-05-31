@@ -11,10 +11,15 @@ Casa:
  -porta automatica tramite motore
  
 -parti non realizzati:
- -raffreddamento interno
- -controllo temperatura interna
- -collegamento tetto tramite PIN
- -orologio interno
+
+  -raffreddamento interno
+  -visualizzazione temperatura interna
+  -collegamento tetto tramite PIN + pannello solare
+  -orologio interno
+  -sblocco antifurto tramite codice
+  -struttura in ferro
+  -radio
+  -tende automatiche
 
 Giardino
 -parti realizzati:
@@ -24,8 +29,9 @@ Giardino
  -cartello tramite il "monitor"
 
 -parti non realizzati:
- -pannelli solari (Ravelli)
- -sistema di 
+  -pannelli solari che seguirà il sole(Ravelli)
+  -garage
+  -fontana
 
 Programmazione
 -i vari codici di programmazione in arduino con le varie descrizioni
