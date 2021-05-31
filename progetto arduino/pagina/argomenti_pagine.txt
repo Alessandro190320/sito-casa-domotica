@@ -11,7 +11,6 @@ Casa:
  -porta automatica tramite motore
  
 -parti non realizzati:
-
   -raffreddamento interno
   -visualizzazione temperatura interna
   -collegamento tetto tramite PIN + pannello solare
