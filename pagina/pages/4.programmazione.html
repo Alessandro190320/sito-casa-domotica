@@ -1,0 +1,550 @@
+<!DOCTYPE html5>
+<html lang="it">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/stile.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <title>Progetto arduino</title>
+  </head>
+ 
+  <body>   
+    <!--nav bar bootstrap -->
+    <div class="fixed-top">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light ">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="../pages/0.index.html">
+            <img src="../style/image/navbar_icon.png" alt="logo Casa " width="30" height="30">
+          </a>
+          <a class="navbar-brand" href="../pages/0.index.html">Casa Domotica</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+            <ul class="nav nav-pills">
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="../pages/1.home.html">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/2.casa.html">Casa</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="../pages/3.giardino.html">Giardino</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="../pages/4.programmazione.html">Programmazione</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </div>
+    
+    <!--inizio del contenuto-->
+    <div class="bckgimg">
+      <div class="container-sm">
+        <div class="shadow-lg p-3 mb-5 bg-body rounded">
+
+          <div class="container-sm">
+            <div class="shadow-lg p-3 mb-5 bg-body rounded "><br />
+              <div class="container-sm">
+                <div class="row g-0">
+                  
+                  <div class="col-md-6">
+                    
+                    <div class="container-sm">
+                      <div class="shadow-lg p-3 bg-body rounded ">
+                        <div class="overflow-auto">
+                          <div class="container">
+                            <div class="background-gray">
+                              <div class="contorno">
+                                <div class="bordo">
+                                  <div class="testo">
+                                    <pre><b>interruttori | Arduino 1.8.13</b></pre>
+                                  </div>
+                                  <div class="tasti"><img src="../immagini/interffaccia_arduino1.png" alt="tasti arduino"></div>
+                                </div>
+                                <div class="bordo2"><pre>File  Modifica  Sketch  Strumenti  Aiuto</pre></div>
+                                <div class="bordo3">
+                                  <img src="../immagini/interfaccia_arduino3.png" alt="tasti arduino" height="32px">
+                                  <div class="spazio">
+                                  <img src="../immagini/interfaccia_arduino4.png" alt="tasti arduino" height="32px">
+                                  </div>
+                                </div>
+                                <div class="bordo4">
+                                  <div class="titolo_a">interruttori §</div>
+                                  <img src="../immagini/interfaccia_arduino5.png" alt="tasti arduino" height="32px">
+                                </div>
+                                <div class="bordo5">
+                                  <pre>
+<div class="b">int</div> ledPin1 = 8;
+<div class="b">int</div> pulsantePin1 = 2;
+<div class="b">int</div> ledStato1 = <div class="b">LOW</div>;
+<div class="b">int</div> pulsanteStato1 = <div class="b">LOW</div>;
+<div class="b">int</div> lettura1=<div class="b">LOW</div>;
+                                    
+<div class="b">int</div> ledPin2 = 10;
+<div class="b">int</div> pulsantePin2 = 4;
+<div class="b">int</div> ledStato2 = <div class="b">LOW</div>;
+<div class="b">int</div> pulsanteStato2 = <div class="b">LOW</div>;
+<div class="b">int</div> lettura2 = <div class="b">LOW</div>;
+                                    
+<div class="b">int</div> ledPin3 = 12;
+<div class="b">int</div> pulsantePin3 = 6;
+<div class="b">int</div> ledStato3 = <div class="b">LOW</div>;
+<div class="b">int</div> pulsanteStato3 = <div class="b">LOW</div>;
+<div class="b">int</div> lettura3 = <div class="b">LOW</div>;
+                                    
+<div class="b">void</div> <div class="g">setup</div>(){
+  <div class="a">pinMode</div>(ledPin1, <div class="b">OUTPUT</div>);
+  <div class="a">pinMode</div>(pulsantePin1, <div class="b">INPUT</div>);
+  <div class="a">digitalWrite</div>(ledPin1, ledStato1);
+                                    
+  <div class="a">pinMode</div>(ledPin2, <div class="b">OUTPUT</div>);
+  <div class="a">pinMode</div>(pulsantePin2, <div class="b">INPUT</div>);
+  <div class="a">digitalWrite</div>(ledPin2, ledStato2);
+                                    
+  <div class="a">pinMode</div>(ledPin3, <div class="b">OUTPUT</div>);
+  <div class="a">pinMode</div>(pulsantePin3, <div class="b">INPUT</div>);
+  <div class="a">digitalWrite</div>(ledPin3, ledStato3);
+}
+                                    
+<div class="b">void</div> <div class="g">loop</div>(){
+  lettura1 = <div class="a">digitalRead</div>(pulsantePin1);
+  <div class="g">if</div>(lettura1 != pulsanteStato1 <div class="g">and</div> lettura1 == <div class="b">HIGH</div>){
+    ledStato1 = !ledStato1;
+    <div class="a">digitalWrite</div>(ledPin1, ledStato1);
+  }
+  pulsanteStato1 = lettura1;
+  <div class="a">delay</div>(10);
+                                    
+                                    
+  lettura2 = <div class="a">digitalRead</div>(pulsantePin2);
+  <div class="g">if</div>(lettura2 != pulsanteStato2 <div class="g">and</div> lettura2 == <div class="b">HIGH</div>){
+    ledStato2 = !ledStato2;
+    <div class="a">digitalWrite</div>(ledPin2, ledStato2);
+  }
+  pulsanteStato2 = lettura2;
+  <div class="a">delay</div>(10);
+                                    
+                                    
+  lettura3 = <div class="a">digitalRead</div>(pulsantePin3);
+  <div class="g">if</div>(lettura3 != pulsanteStato3 <div class="g">and</div> lettura3 == <div class="b">HIGH</div>){
+    ledStato3 = !ledStato3;
+    <div class="a">digitalWrite</div>(ledPin3, ledStato3);
+  }
+  pulsanteStato3 = lettura3;
+  <div class="a">delay</div>(10);
+}</pre>
+                                </div>
+                                <div class="bordo4"></div>
+                                <div class="bordo6"></div>
+                                <div class="bordo7"><pre> 10                                 Arduino Uno su /dev/ttyACM0</pre></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-1"></div>
+
+                  <div class="col-md-5">
+                    <div class="shadow-sm p-3 mb-5 bg-body rounded">
+                      <p class="fs-3">Interruttori</p><br />
+                      <p class="fs-5"> 
+                        Dovevamo riprodurre l'impianto delle luci di una casa nel nostro progetto, ma avendo solo dei bottoni che chiudevano il cicruito solo durante la pressione, abbiamo programmato arduino in modo che legga lo stato del bottone e che apra e chiuda il circuito mantentendo lo stato proprio come un interruttore. In questo modo possiamo riprodurre gli interruttori delle luci in una casa.
+                      </p>
+                      <img src="../immagini/tinkercad_arduino1.png" alt="immagine tinkercad" width="450px">
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div><!--fine ombra conteiner-->
+      </div><!--fine conteiner--> 
+       <!--inizio del contenuto-->
+    <div class="bckgimg">
+      <div class="container-sm">
+        <div class="shadow-lg p-3 mb-5 bg-body rounded">
+
+          <div class="container-sm">
+            <div class="shadow-lg p-3 mb-5 bg-body rounded "><br />
+              <div class="container-sm">
+                <div class="row g-0">
+                  
+                  <div class="col-md-6">
+                    
+                    <div class="container-sm">
+                      <div class="shadow-lg p-3 bg-body rounded ">
+                        <div class="overflow-auto">
+                          <div class="container">
+                            <div class="background-gray">
+                              <div class="contorno">
+                                <div class="bordo">
+                                  <div class="testo">
+                                    <pre><b>   antifurto | Arduino 1.8.13</b></pre>
+                                  </div>
+                                  <div class="tasti"><img src="../immagini/interffaccia_arduino1.png" alt="tasti arduino"></div>
+                                </div>
+                                <div class="bordo2"><pre>File  Modifica  Sketch  Strumenti  Aiuto</pre></div>
+                                <div class="bordo3">
+                                  <img src="../immagini/interfaccia_arduino3.png" alt="tasti arduino" height="32px">
+                                  <div class="spazio">
+                                  <img src="../immagini/interfaccia_arduino4.png" alt="tasti arduino" height="32px">
+                                  </div>
+                                </div>
+                                <div class="bordo4">
+                                  <div class="titolo_a">antifurto §</div>
+                                  <img src="../immagini/interfaccia_arduino5.png" alt="tasti arduino" height="32px">
+                                </div>
+                                <div class="bordo5">
+                                  <pre>
+<div class="b">int</div> buzzerPin = 11;
+<div class="b">int</div> ledPin = 9;             
+<div class="b">int</div> pulsantePin = 2;
+<div class="b">int</div> pirPin = 4;
+<div class="b">int</div> ledStato = <div class="b">LOW</div>;
+<div class="b">int</div> pulsanteStato = <div class="b">LOW</div>;
+<div class="b">int</div> on_off = <div class="b">LOW</div>;
+<div class="b">int</div> pirStat = <div class="b">LOW</div>;
+
+<div class="b">void</div> <div class="g">setup</div>(){
+  <div class="a">pinMode</div>(ledPin, <div class="b">OUTPUT</div>);
+  <div class="a">pinMode</div>(pulsantePin, <div class="b">INPUT</div>);
+  <div class="a">pinMode</div>(buzzerPin, <div class="b">OUTPUT</div>);
+  <div class="a">pinMode</div>(pirPin,<div class="b">INPUT</div>);
+  <div class="a">digitalWrite</div>(ledPin, ledStato);
+}
+
+<div class="b">void</div> <div class="g">loop</div>(){
+  <div class="b">int</div> lettura = <div class="a">digitalRead</div>(pulsantePin);
+  <div class="g">if</div>(lettura != pulsanteStato <div class="g">and</div> lettura == <div class="b">HIGH</div>){
+    on_off = !on_off;
+  }
+  pulsanteStato = lettura;
+  <div class="a">delay</div>(10);
+  
+  <div class="g">if</div>(on_off==<div class="b">HIGH</div>){
+    pirStat = <div class="a">digitalRead</div>(pirPin); 
+    <div class="g">if</div> (pirStat == <div class="b">HIGH</div>) {            
+      <div class="a">digitalWrite</div>(ledPin, <div class="b">HIGH</div>);     
+      <div class="a">digitalWrite</div>(buzzerPin, <div class="b">HIGH</div>);
+    } 
+    <div class="g">else</div> {
+      <div class="a">digitalWrite</div>(ledPin, <div class="b">LOW</div>);      
+      <div class="a">digitalWrite</div>(buzzerPin, <div class="b">LOW</div>);
+    }
+  }
+  <div class="g">else</div>{
+    <div class="a">digitalWrite</div>(ledPin, <div class="b">LOW</div>);
+    pirStat = <div class="b">LOW</div>;
+  }
+}</pre>
+                                </div>
+                                <div class="bordo4"></div>
+                                <div class="bordo6"></div>
+                                <div class="bordo7"><pre> 10                                 Arduino Uno su /dev/ttyACM0</pre></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-1"></div>
+
+                  <div class="col-md-5">
+                    <div class="shadow-sm p-3 mb-5 bg-body rounded">
+                      <p class="fs-3">Antifurto</p><br />
+                      <p class="fs-5">
+                        Volevamo ricreare l'allarme di una casa, per farlo abbiamo usato il sensore pir che trammite un raggio ad infrarossi rilleva il movimento.L'allarme si accende e si spegne con un bottone all'interno della casa.Quando l'allarme è attivo e viene rillevato un movimento parte un suono dal buzzer e si accende una luce rossa.
+                      </p>
+                      <br><br>
+                      <img src="../immagini/tinkercad_arduino2.png" alt="foto tinkercad" width="450px">
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div><!--fine ombra conteiner-->
+      </div><!--fine conteiner--> 
+             <!--inizio del contenuto-->
+    <div class="bckgimg">
+      <div class="container-sm">
+        <div class="shadow-lg p-3 mb-5 bg-body rounded">
+
+          <div class="container-sm">
+            <div class="shadow-lg p-3 mb-5 bg-body rounded "><br />
+              <div class="container-sm">
+                <div class="row g-0">
+                  
+                  <div class="col-md-6">
+                    
+                    <div class="container-sm">
+                      <div class="shadow-lg p-3 bg-body rounded ">
+                        <div class="overflow-auto">
+                          <div class="container">
+                            <div class="background-gray">
+                              <div class="contorno">
+                                <div class="bordo">
+                                  <div class="testo">
+                                    <pre><b>   lampioni | Arduino 1.8.13 </b></pre>
+                                  </div>
+                                  <div class="tasti"><img src="../immagini/interffaccia_arduino1.png" alt="tasti arduino"></div>
+                                </div>
+                                <div class="bordo2"><pre>File  Modifica  Sketch  Strumenti  Aiuto</pre></div>
+                                <div class="bordo3">
+                                  <img src="../immagini/interfaccia_arduino3.png" alt="tasti arduino" height="32px">
+                                  <div class="spazio">
+                                  <img src="../immagini/interfaccia_arduino4.png" alt="tasti arduino" height="32px">
+                                  </div>
+                                </div>
+                                <div class="bordo4">
+                                  <div class="titolo_a">lampioni §</div>
+                                  <img src="../immagini/interfaccia_arduino5.png" alt="tasti arduino" height="32px">
+                                </div>
+                                <div class="bordo5">
+                                  <pre>
+  <div class="g">#define</div> foto A0
+  <div class="g">#define</div> led 13 
+  <div class="b">int</div> valFoto;
+  <div class="b">void</div> <div class="g">setup</div>()
+  {
+    <div class="a">pinMode</div>(foto, <div class="b">INPUT</div>);
+    <div class="a">pinMode</div>(led, <div class="b">OUTPUT</div>);
+  }
+                                    
+  <div class="b">void</div> <div class="a">loop</div>()
+  {
+    valFoto = <div class="a">analogRead</div>(foto);
+    <div class="g">if</div>(valFoto <= 600)
+    <div class="a">digitalWrite</div>(led, <div class="b">HIGH</div>);
+    <div class="g">else</div> 
+      <div class="a">digitalWrite</div>(led, <div class="b">LOW</div>);
+    <div class="a">delay</div>(100);
+  }</pre>
+                                </div>
+                                <div class="bordo4"></div>
+                                <div class="bordo6"></div>
+                                <div class="bordo7"><pre> 10                                 Arduino Uno su /dev/ttyACM0</pre></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-1"></div>
+
+                  <div class="col-md-5">
+                    <div class="shadow-sm p-3 mb-5 bg-body rounded">
+                      <p class="fs-3">Lampioni</p><br />
+                      <p class="fs-5">
+                        Volevamo ricreare i lampioni del giardino di una casa, che quando è giorno rimangono spenti e quando è buio si accendono.Abbiamo potuto reallizare la nostra idea grazie ad una fotoresistenza che trammite arduino legge i valori di luce e se sono inferiori o uguali a 600 accende le luci, se no le spegne.
+                      </p>
+                      <br>
+                      <br><br>
+                      <img src="../immagini/tinkercad_arduino3.png" alt="foto tinkercad" width="450px">
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div><!--fine ombra conteiner-->
+      </div><!--fine conteiner-->
+                  <!--inizio del contenuto-->
+    <div class="bckgimg">
+      <div class="container-sm">
+        <div class="shadow-lg p-3 mb-5 bg-body rounded">
+
+          <div class="container-sm">
+            <div class="shadow-lg p-3 mb-5 bg-body rounded "><br />
+              <div class="container-sm">
+                <div class="row g-0">
+                  
+                  <div class="col-md-6">
+                    
+                    <div class="container-sm">
+                      <div class="shadow-lg p-3 bg-body rounded ">
+                        <div class="overflow-auto">
+                          <div class="container">
+                            <div class="background-gray">
+                              <div class="contorno">
+                                <div class="bordo">
+                                  <div class="testo">
+                                    <pre><b>irrigazione | Arduino 1.8.13 </b></pre>
+                                  </div>
+                                  <div class="tasti"><img src="../immagini/interffaccia_arduino1.png" alt="tasti arduino"></div>
+                                </div>
+                                <div class="bordo2"><pre>File  Modifica  Sketch  Strumenti  Aiuto</pre></div>
+                                <div class="bordo3">
+                                  <img src="../immagini/interfaccia_arduino3.png" alt="tasti arduino" height="32px">
+                                  <div class="spazio">
+                                  <img src="../immagini/interfaccia_arduino4.png" alt="tasti arduino" height="32px">
+                                  </div>
+                                </div>
+                                <div class="bordo4">
+                                  <div class="titolo_a">irrigazione §</div>
+                                  <img src="../immagini/interfaccia_arduino5.png" alt="tasti arduino" height="32px">
+                                </div>
+                                <div class="bordo5">
+                                  <pre>
+  <div class="g">#define</div> foto A0
+  <div class="g">#define</div> led 13 
+  <div class="b">int</div> valFoto;
+  <div class="b">void</div> <div class="g">setup</div>()
+  {
+    <div class="a">pinMode</div>(foto, <div class="b">INPUT</div>);
+    <div class="a">pinMode</div>(led, <div class="b">OUTPUT</div>);
+  }
+                                    
+  <div class="b">void</div> <div class="a">loop</div>()
+  {
+    valFoto = <div class="a">analogRead</div>(foto);
+    <div class="g">if</div>(valFoto <= 600)
+    <div class="a">digitalWrite</div>(led, <div class="b">HIGH</div>);
+    <div class="g">else</div> 
+      <div class="a">digitalWrite</div>(led, <div class="b">LOW</div>);
+    <div class="a">delay</div>(100);
+  }</pre>
+                                </div>
+                                <div class="bordo4"></div>
+                                <div class="bordo6"></div>
+                                <div class="bordo7"><pre> 10                                 Arduino Uno su /dev/ttyACM0</pre></div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-1"></div>
+
+                  <div class="col-md-5">
+                    <div class="shadow-sm p-3 mb-5 bg-body rounded">
+                      <p class="fs-3">Irrigazione</p><br />
+                      <p class="fs-5">
+                        Volevamo ricreare i gettini di una casa, avevamo la pompa sommersa ma richiedeva una tensione di 12V cosa che arduino non poteva fornire.Quindi abbiamo dovuto usare un relay e una batteria da 12V 7A, programmando l'arduino in modo che alla pressione di un bottone faccia azionare il relay che chiude il circuito tra la batteria e la pompa sommersa (nello schema il led blu)
+                      </p>
+                      <img src="../immagini/tinkercad_arduino4.png" alt="foto tinkercad" width="450px">
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div><!--fine ombra conteiner-->
+      </div><!--fine conteiner--> 
+      <!--parte finale sito-->
+      <div class="hbot">
+        <h2>Suddivisione dei compiti</h2>
+        <div class="boot">
+
+          <div class="occupazioni">
+            <a href="#">Progettazione</a><br>
+            David Zhu<br>
+            Alessandro Marcheselli<br>
+            Alexia Mantovani<br>
+            Alexandra Misoci<br>
+            Alessandro Furci<br>
+            Giacomo Modenesi<br>
+            Simone Dalla Rovere<br>
+            Andrea Bianchini<br>
+            Jiaxiang Xu<br>
+          </div>
+
+          <div class="occupazioni">
+            <a href="#">Allestimento</a><br>
+              David Zhu<br>
+              Alessandro Marcheselli<br>
+              Alexia Mantovani<br>
+              Alexandra Misoci<br>
+              Alessandro Furci<br>
+              Giacomo Modenesi<br>
+              Simone Dalla Rovere<br>
+              Andrea Bianchini<br>
+              Jiaxiang Xu<br>
+          </div>
+          
+          <div class="occupazioni">
+            <a href="#">Struttura</a><br>
+            David Zhu<br>
+            Alessandro Marcheselli<br>
+            Alexia Mantovani<br>
+            Alexandra Misoci<br>
+            Alessandro Furci<br>
+            Giacomo Modenesi<br>
+            Simone Dalla Rovere<br>
+            Andrea Bianchini<br>
+            Jiaxiang Xu<br>  
+          </div>
+
+          <div class="occupazioni">
+            <a href="#">Grafica</a><br>
+            David Zhu<br>
+            Alessandro Marcheselli<br>
+            Alexia Mantovani<br>
+            Alexandra Misoci<br>
+            Alessandro Furci<br>
+            Giacomo Modenesi<br>
+            Simone Dalla Rovere<br>
+            Andrea Bianchini<br>
+            Jiaxiang Xu<br>
+          </div>
+
+          <div class="occupazioni">
+            <a href="#">Programmazione</a><br>
+            David Zhu<br>
+            Alessandro Marcheselli<br>
+            Alexia Mantovani<br>
+            Alexandra Misoci<br>
+            Alessandro Furci<br>
+            Giacomo Modenesi<br>
+            Simone Dalla Rovere<br>
+            Andrea Bianchini<br>
+            Jiaxiang Xu<br>
+          </div>  
+
+          <div class="occupazioni">
+            <a href="#">Elettronica</a><br>
+            David Zhu<br>
+            Alessandro Marcheselli<br>
+            Alexia Mantovani<br>
+            Alexandra Misoci<br>
+            Alessandro Furci<br>
+            Giacomo Modenesi<br>
+            Simone Dalla Rovere<br>
+            Andrea Bianchini<br>
+            Jiaxiang Xu<br>
+          </div>
+        </div>
+      </div>
+    </div><!--fine background image-->
+
+    <!--ZONA SCRIPT-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
+    
+  </body>
+</html>
