@@ -457,6 +457,115 @@
 
         </div><!--fine ombra conteiner-->
       </div><!--fine conteiner--> 
+    </div><!--fine conteiner-->
+    <!--inizio del contenuto-->
+<div class="bckgimg">
+<div class="container-sm">
+<div class="shadow-lg p-3 mb-5 bg-body rounded">
+
+<div class="container-sm">
+<div class="shadow-lg p-3 mb-5 bg-body rounded "><br />
+<div class="container-sm">
+  <div class="row g-0">
+    
+    <div class="col-md-6">
+      
+      <div class="container-sm">
+        <div class="shadow-lg p-3 bg-body rounded ">
+          <div class="overflow-auto">
+            <div class="container">
+              <div class="background-gray">
+                <div class="contorno">
+                  <div class="bordo">
+                    <div class="testo">
+                      <pre><b>motorino | Arduino 1.8.13 </b></pre>
+                    </div>
+                    <div class="tasti"><img src="../immagini/interffaccia_arduino1.png" alt="tasti arduino"></div>
+                  </div>
+                  <div class="bordo2"><pre>File  Modifica  Sketch  Strumenti  Aiuto</pre></div>
+                  <div class="bordo3">
+                    <img src="../immagini/interfaccia_arduino3.png" alt="tasti arduino" height="32px">
+                    <div class="spazio">
+                    <img src="../immagini/interfaccia_arduino4.png" alt="tasti arduino" height="32px">
+                    </div>
+                  </div>
+                  <div class="bordo4">
+                    <div class="titolo_a">motorino §</div>
+                    <img src="../immagini/interfaccia_arduino5.png" alt="tasti arduino" height="32px">
+                  </div>
+                  <div class="bordo5">
+                    <pre>
+<div class="b">int</div> motor1pin1 = 2;
+<div class="b">int</div> motor1pin2 = 3;
+<div class="b">int</div> enablepin = 5;
+<div class="b">int</div> speedout = 9;
+                      
+<div class="b">void</div> <div class="g">setup</div>() {
+  <div class="a">pinMode</div>(motor1pin1, <div class="b">OUTPUT</div>);
+  <div class="a">pinMode</div>(motor1pin2, <div class="b">OUTPUT</div>);
+  <div class="a">pinMode</div>(enablepin, <div class="b">OUTPUT</div>);
+  <div class="a">pinMode</div>(speedout, <div class="b">OUTPUT</div>);
+  <div class="a">digitalWrite</div>(enablepin, <div class="b">HIGH</div>);
+  <div class="a">digitalWrite</div>(motor1pin1, <div class="b">HIGH</div>);
+  <div class="a">digitalWrite</div>(motor1pin2, <div class="b">LOW</div>);
+}
+                      
+<div class="b">void</div> <div class="g">loop</div>() {
+  <div class="a">analogWrite</div>(speedout, 255);
+                        
+  <div class="a">digitalWrite</div>(enablepin,<div class="b">HIGH</div>);
+  <div class="a">digitalWrite</div>(motor1pin1, <div class="b">HIGH</div>);
+  <div class="a">digitalWrite</div>(motor1pin2, <div class="b">LOW</div>);
+  <div class="a">delay</div>(3000);
+                      
+  <div class="a">digitalWrite</div>(enablepin,<div class="b">LOW</div>);
+  <div class="a">digitalWrite</div>(motor1pin1, <div class="b">LOW</div>);
+  <div class="a">digitalWrite</div>(motor1pin2, <div class="b">LOW</div>);
+  <div class="a">delay</div>(1000);
+                      
+  <div class="a">digitalWrite</div>(enablepin,<div class="b">HIGH</div>);
+  <div class="a">digitalWrite</div>(motor1pin1, <div class="b">LOW</div>);
+  <div class="a">digitalWrite</div>(motor1pin2, <div class="b">HIGH</div>);
+  <div class="a">delay</div>(3000);
+                      
+  <div class="a">digitalWrite</div>(enablepin,<div class="b">LOW</div>);
+  <div class="a">digitalWrite</div>(motor1pin1, <div class="b">LOW</div>);
+  <div class="a">digitalWrite</div>(motor1pin2, <div class="b">LOW</div>);
+  <div class="a">delay</div>(1000);
+}</pre>
+                  </div>
+                  <div class="bordo4"></div>
+                  <div class="bordo6"></div>
+                  <div class="bordo7"><pre> 10                                 Arduino Uno su /dev/ttyACM0</pre></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-1"></div>
+
+    <div class="col-md-5">
+      <div class="shadow-sm p-3 mb-5 bg-body rounded">
+        <p class="fs-3">motorino</p><br />
+        <p class="fs-5">
+          Avevamo bisogno di far ruotare il motorino in due sensi per applicarlo al cancello e alla prota di casa.Ci siamo riusciti con una scheda programmabile e arduino. Così riusciamo ad aprire e chiudere il cancello e la porta di casa.
+        </p>
+        <br><br><br><br>
+        <img src="../immagini/motorino.png" alt="foto tinkercad" width="450px">
+      </div>
+    </div>
+
+  </div>
+</div>
+</div>
+</div>
+
+</div><!--fine ombra conteiner-->
+</div><!--fine conteiner--> 
       <!--parte finale sito-->
       <div class="hbot">
         <h2>Suddivisione dei compiti</h2>
