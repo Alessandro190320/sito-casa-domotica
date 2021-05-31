@@ -2,30 +2,31 @@ agenda:
 -(R) = realizzato
 
 Home
--presentazione generalae del progetto
+-presentazione generale del progetto
 
 Casa:
 -parti realizzati:
- -antifurto (on/off tramite bottone)
- -sistema illuminazione interna (R)
- -porta automatica tramite motore
+  -antifurto (on/off tramite bottone)
+  -sistema illuminazione interna (R)
+  -porta automatica tramite motore
  
 -parti non realizzati:
- -raffreddamento interno
- -controllo temperatura interna
- -collegamento tetto tramite PIN
- -orologio interno
+  -raffreddamento interno
+  -visualizzazione temperatura interna
+  -collegamento tetto tramite PIN
+  -orologio interno
+  -sblocco antifurto tramite codice
 
 Giardino
 -parti realizzati:
- -sistema irrigazione giardino (R)
- -sistema illuminazione esterna tramite fotoresistenza
- -controllo del cancello principale (tramite controllo remoto (probabile))
- -cartello tramite il "monitor"
+  -sistema irrigazione giardino (R)
+  -sistema illuminazione esterna tramite fotoresistenza
+  -controllo del cancello principale (tramite controllo remoto (probabile))
+  -cartello tramite il "monitor"
 
 -parti non realizzati:
- -pannelli solari (Ravelli)
- -garage
+  -pannelli solari (Ravelli)
+  -garage
 
 Programmazione
 -i vari codici di programmazione in arduino con le varie descrizioni
