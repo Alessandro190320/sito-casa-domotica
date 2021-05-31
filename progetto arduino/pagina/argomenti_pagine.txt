@@ -11,14 +11,16 @@ Casa:
  -porta automatica tramite motore
  
 -parti non realizzati:
-  -raffreddamento interno
+  -sistema aerazione
   -visualizzazione temperatura interna
   -collegamento tetto tramite PIN + pannello solare
   -orologio interno
   -sblocco antifurto tramite codice
   -struttura in ferro
   -radio
+  -fontana (Carmine)
   -tende automatiche
+  -discoteca (Giacomo)
 
 Giardino
 -parti realizzati:
