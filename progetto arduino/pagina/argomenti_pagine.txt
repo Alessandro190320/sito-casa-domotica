@@ -25,7 +25,7 @@ Giardino
 
 -parti non realizzati:
  -pannelli solari (Ravelli)
- -sistema di 
+ -garage
 
 Programmazione
 -i vari codici di programmazione in arduino con le varie descrizioni
