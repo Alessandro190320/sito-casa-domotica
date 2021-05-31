@@ -1,17 +1,20 @@
-const int FotoR = A0;
-const int Led = 3;
-const int Bot= 9;
-int valoreFotoR;
-int valoreLed;
-int valoreBot;
-
+#define foto A0
+#define led 13 
+int valFoto;
 void setup()
 {
-  pinMode(Led, OUTPUT);
-   pinMode(Bot,INPUT);
+  pinMode(foto, INPUT);
+  pinMode(led, OUTPUT);
+  
 }
 
 void loop()
 {
-  digitalWrite(10, HIGH);
+  valFoto = analogRead(foto);
+  if(valFoto <= 600)
+    digitalWrite(led, HIGH);
+  else 
+    digitalWrite(led, LOW);
+  delay(100);
 }
+  
