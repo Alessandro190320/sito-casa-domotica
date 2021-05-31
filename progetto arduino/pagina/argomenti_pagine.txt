@@ -13,14 +13,13 @@ Casa:
 -parti non realizzati:
   -sistema aerazione
   -visualizzazione temperatura interna
-  -collegamento tetto tramite PIN + pannello solare
   -orologio interno
-  -sblocco antifurto tramite codice
   -struttura in ferro
-  -radio
-  -fontana (Carmine)
+  -radio (Carmine)
+  -collegamento tetto tramite PIN + pannello solare
   -tende automatiche
   -discoteca (Giacomo)
+  -sblocco antifurto tramite codice
 
 Giardino
 -parti realizzati:
