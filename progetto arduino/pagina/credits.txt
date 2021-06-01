@@ -13,4 +13,4 @@ allestimento		Zhu, Marcheselli, Alexia
 struttura		Zhu, Marcheselli, Alexia
 grafica			Zhu, Marcheselli, Alexia, Jiaxiang, Furci, Bianchini
 programmazione		Zhu, Marcheselli, Alexia, Modenesi, Miscoci
-elettronica		Zhu, Marcheselli, Furci, Xu, Bianchini
+elettronica		Zhu, Marcheselli, Alexia, Furci, Xu, Bianchini
