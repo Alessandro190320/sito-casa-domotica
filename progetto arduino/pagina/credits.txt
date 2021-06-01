@@ -1,0 +1,16 @@
+Marcheselli		allestimento, programmazione, grafica, elettronica, struttura
+Zhu			allestimento, programmazione, grafica, elettronica, struttura
+Mantovani		allestimento, programmazione, struttura, grafica
+Miscoci			programmazione, elettronica
+Furci			grafica, elettronica
+Modenesi		programmazione, elettronica
+Bianchini		elettronica, grafica
+Xu			grafica, elettronica
+TUTTI 			progettazione
+
+progettazione		Tutti
+allestimento		Zhu, Marcheselli, Alexia
+struttura		Zhu, Marcheselli, Alexia
+grafica			Zhu, Marcheselli, Alexia, Jiaxiang, Furci, Bianchini
+programmazione		Zhu, Marcheselli, Alexia, Modenesi, Miscoci
+elettronica		Zhu, Marcheselli, Furci, Xu, Bianchini
