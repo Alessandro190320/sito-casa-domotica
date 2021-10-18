@@ -35,6 +35,7 @@ void loop(){
     }
   }
   else{
+    digitalWrite(buzzerPin, LOW);
     digitalWrite(ledPin, LOW);
     pirStat = LOW;
   }
